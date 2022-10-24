@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Тестовое задание</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Favicon-->
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<!--Styles-->
+		<link rel="stylesheet" href="fonts/fonts.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container container">
+				<a href="/" class="header__logo logo"></a>
+				<nav class="header__nav">
+					<ul class="menu">
+						<li class="menu__item"><a href="#" class="menu__link menu__link_active">Бизнес</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Оформить заказ</a></li>
+					</ul>
+				</nav>
+				<button class="burger">
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+				</button>
+			</div>
+		</header>
+		<main class="main">
+			<div class="first-screen">
+				<div class="first-screen__container container">
+					<h1 class="first-screen__title title"><span class="blue-text">Lorem ipsum</span> dolor sit<br> amet consectetur <span class="blue-text">adipiscing</span></h1>
+					<span class="first-screen__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</span>
+					<ul class="first-screen__list list">
+						<li class="list__item">Totam rem aperiam eaque ipsa</li>
+						<li class="list__item">Sit voluptatem accusantium doloremque laudantium</li>
+						<li class="list__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+					</ul>
+					<div class="first-screen__buttons">
+						<button class="first-screen__button button button_primary">заказать</button>
+						<button class="first-screen__button button button_secondary">подробнее</button>
+					</div>
+				</div>
+			</div>
+			<div class="order">
+				<div class="order__container container">
+					<h2 class="order__title">Оформление <span class="blue-text">&nbsp;Заказа</span></h2>
+					<span class="order__sub-title">Перед заполнением формы ознакомьтесь с нашей схемой работы!</span>
+					<div class="order__steps steps">
+						<div class="steps__item">
+							<div class="steps__icon steps__icon_icon1"></div>
+							<span class="steps__name">Lorem ipsum dolor sit amet</span>
+						</div>
+						<div class="steps__item">
+							<div class="steps__icon steps__icon_icon2"></div>
+							<span class="steps__name">Сonsecteturadipiscing elit</span>
+						</div>
+						<div class="steps__item">
+							<div class="steps__icon steps__icon_icon3"></div>
+							<span class="steps__name">Sed do eiusmod tempor</span>
+						</div>
+						<div class="steps__item">
+							<div class="steps__icon steps__icon_icon4"></div>
+							<span class="steps__name">Esse cillum dolore eu fugiat</span>
+						</div>
+						<div class="steps__item">
+							<div class="steps__icon steps__icon_icon5"></div>
+							<span class="steps__name">Excepteur sint occaecat cupidatat non proident</span>
+						</div>
+					</div>
+					<form class="order__form form" action="#">
+						<div class="form__body">
+							<select class="form__select select" name="system">
+								<option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+								<option value="Nemo enim ipsam">Nemo enim ipsam</option>
+								<option value="Et harum quidem">Et harum quidem</option>
+								<option value="Temporibus autem">Temporibus autem</option>
+								<option value="Itaque earum rerum">Itaque earum rerum</option>
+								<option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+								<option value="Nemo enim ipsam">Nemo enim ipsam</option>
+								<option value="Et harum quidem">Et harum quidem</option>
+								<option value="Temporibus autem">Temporibus autem</option>
+								<option value="Itaque earum rerum">Itaque earum rerum</option>
+							</select>
+							<input class="form__input" type="text" name="mail" placeholder="Ваш e-mail">
+							<input class="form__input" type="text" name="firstname" placeholder="Ваше имя">
+							<div class="form__range range">
+								<label class="range__label">Sed ut perspiciatis, unde omnis iste natus <span id="range-output" class="range__value">75 %</span></label>
+								<input class="range__input" type="range" name="range" value="75" oninput="document.getElementById('range-output').innerHTML = this.value + ' %'">
+							</div>
+							<div class="form__upload upload">
+								<input class="upload__file" id="file-upload" type="file" name="upload" data-file="{count} files selected">
+								<label class="upload__label" for="file-upload"><span class="upload__name">Прикрепить файл</span></label>
+							</div>
+						</div>
+						<div class="form__bottom">
+							<input class="form__send" type="submit" name="send" value="Отправить">
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</div>
+				<div class="footer__payments payments">
+					<div class="payments__item payments__item_qiwi">Qiwi wallet</div>
+					<div class="payments__item payments__item_yandex">Yandex Money</div>
+					<div class="payments__item payments__item_wm">Web Money</div>
+				</div>
+				<div class="footer__contacts contacts">
+					<a class="contacts__item contacts__item_mail" href="#">info@ipsum228.com</a>
+					<a class="contacts__item contacts__item_vk" href="#">Мы вконтакте</a>
+				</div>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="js/custom-select.min.js"></script>
+		<script src="js/script.min.js" async defer></script>
+	</body>
+</html>
